@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pemilih</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Daftar Pemilih</h1>
+    <ul>
+        <% voters.forEach(voter=> { %>
+            <li>
+                <%= voter.name %> - NIK: <%= voter.nik %> - <%= voter.address %>
+            </li>
+            <% }) %>
+    </ul>
+    <a href="/">Kembali ke Halaman Utama</a>
+</body>
+
+</html>

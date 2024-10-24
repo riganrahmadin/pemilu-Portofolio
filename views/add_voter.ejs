@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tambah Pemilih</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+
+<body>
+    <h1>Tambah Pemilih</h1>
+    <form action="/add-voter" method="POST">
+        <input type="text" name="name" placeholder="Nama" required><br>
+        <input type="text" name="nik" placeholder="NIK" required><br>
+        <input type="text" name="address" placeholder="Alamat" required><br>
+        <select name="gender">
+            <option value="L">Laki-laki</option>
+            <option value="P">Perempuan</option>
+        </select><br>
+        <input type="date" name="dob" required><br>
+        <button type="submit">Tambah</button>
+    </form>
+</body>
+
+</html>
